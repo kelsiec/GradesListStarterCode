@@ -10,12 +10,12 @@ public class GradesClient {
     private static final int AVERAGE = 7;
     private static final int EXIT = 8;
 
-    private static Scanner keyboard = new Scanner(System.in);
     private Grades grades = new Grades();
 
     public static void main(String[] args) {
         int choice = -1;
         GradesClient client = new GradesClient();
+        Scanner keyboard = new Scanner(System.in);
 
         while (choice != EXIT) {
             displayMenu();
